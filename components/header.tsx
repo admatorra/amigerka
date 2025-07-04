@@ -14,13 +14,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { CartIcon } from "@/components/cart-icon"
-import { useTranslation, type Language } from "@/lib/i18n"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [user, setUser] = useState<any>(null)
   const [language, setLanguage] = useState<Language>("uk")
-  const { t } = useTranslation(language)
 
   useEffect(() => {
     const userData = localStorage.getItem("user")
