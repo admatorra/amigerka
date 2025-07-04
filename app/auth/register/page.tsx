@@ -9,7 +9,6 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { db, type User } from "@/lib/database"
-import { useTranslation } from "@/lib/i18n"
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState({
